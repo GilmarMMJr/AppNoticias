@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1IM-ZH-Q5k">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="EHW-Xu-k6W">
+            <objects>
+                <tableViewController id="ZUv-85-n2u" customClass="MainTableViewController" customModule="AppNoticias" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Gz7-pN-gXk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="319" id="bin-TO-ptx" customClass="NewYorkTableViewCell" customModule="AppNoticias" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="319"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bin-TO-ptx" id="fKK-vy-F25">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="319"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 Men Convicted of Killing Malcolm X Will Be Exonerated After Decades" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="e2e-He-ExV">
+                                            <rect key="frame" x="10" y="5" width="394" height="36"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oKg-Ye-zaU">
+                                            <rect key="frame" x="10" y="51" width="394" height="237"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Ashley Southall and Jonah E. Bromwich" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="GT9-io-4Yb">
+                                            <rect key="frame" x="10" y="298" width="394" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="e2e-He-ExV" firstAttribute="leading" secondItem="fKK-vy-F25" secondAttribute="leading" constant="10" id="G1u-D5-sdH"/>
+                                        <constraint firstItem="oKg-Ye-zaU" firstAttribute="leading" secondItem="e2e-He-ExV" secondAttribute="leading" id="Peb-dV-Trd"/>
+                                        <constraint firstItem="oKg-Ye-zaU" firstAttribute="bottom" secondItem="GT9-io-4Yb" secondAttribute="top" constant="-10" id="SHD-ej-jQ2"/>
+                                        <constraint firstItem="oKg-Ye-zaU" firstAttribute="top" secondItem="e2e-He-ExV" secondAttribute="bottom" constant="10" id="UOq-dp-nuX"/>
+                                        <constraint firstAttribute="trailing" secondItem="e2e-He-ExV" secondAttribute="trailing" constant="10" id="XX9-J9-ux7"/>
+                                        <constraint firstItem="oKg-Ye-zaU" firstAttribute="trailing" secondItem="e2e-He-ExV" secondAttribute="trailing" id="ZPJ-Pz-Iuo"/>
+                                        <constraint firstItem="GT9-io-4Yb" firstAttribute="leading" secondItem="e2e-He-ExV" secondAttribute="leading" id="ZrW-fD-uaW"/>
+                                        <constraint firstItem="e2e-He-ExV" firstAttribute="top" secondItem="fKK-vy-F25" secondAttribute="top" constant="5" id="ZtQ-gD-g4j"/>
+                                        <constraint firstAttribute="bottom" secondItem="GT9-io-4Yb" secondAttribute="bottom" constant="3" id="sv3-8n-v3N"/>
+                                        <constraint firstItem="GT9-io-4Yb" firstAttribute="trailing" secondItem="e2e-He-ExV" secondAttribute="trailing" id="uay-dh-xJU"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="byLabel" destination="GT9-io-4Yb" id="zeQ-hU-pNS"/>
+                                    <outlet property="newsImage" destination="oKg-Ye-zaU" id="uKK-wY-xUS"/>
+                                    <outlet property="titleLabel" destination="e2e-He-ExV" id="lB3-Kx-htg"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZUv-85-n2u" id="M6b-RH-Aju"/>
+                            <outlet property="delegate" destination="ZUv-85-n2u" id="uCe-CS-5ab"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="fpg-Bz-tOe"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wkD-WR-may" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71.014492753623188" y="80.357142857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fHa-C2-zr5">
+            <objects>
+                <navigationController id="1IM-ZH-Q5k" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N4Q-0C-XsA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZUv-85-n2u" kind="relationship" relationship="rootViewController" id="g02-qH-m2L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ljN-mt-3dN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-817" y="81"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
