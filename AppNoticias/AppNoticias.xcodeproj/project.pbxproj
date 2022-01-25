@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5119D6B92790FE2D00C0E2BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5119D6B82790FE2D00C0E2BE /* LoginViewController.swift */; };
 		5182C0412784EEE100A9B083 /* NewYorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5182C0402784EEE100A9B083 /* NewYorkTableViewCell.swift */; };
+		51C20021279E038D00F4F669 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C20020279E038D00F4F669 /* NetworkManager.swift */; };
+		51C20023279E12F300F4F669 /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C20022279E12F300F4F669 /* NewsData.swift */; };
 		51E9AC402782690600354EF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9AC3F2782690600354EF3 /* AppDelegate.swift */; };
 		51E9AC422782690600354EF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9AC412782690600354EF3 /* SceneDelegate.swift */; };
 		51E9AC442782690600354EF3 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9AC432782690600354EF3 /* MainTableViewController.swift */; };
@@ -15,11 +18,13 @@
 		51E9AC492782691000354EF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51E9AC482782691000354EF3 /* Assets.xcassets */; };
 		51E9AC4C2782691000354EF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51E9AC4A2782691000354EF3 /* LaunchScreen.storyboard */; };
 		51E9AC562782754F00354EF3 /* NewYorkNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E9AC552782754F00354EF3 /* NewYorkNews.swift */; };
-		51E9AC5B27827F4C00354EF3 /* file.json in Resources */ = {isa = PBXBuildFile; fileRef = 51E9AC5A27827F4C00354EF3 /* file.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5119D6B82790FE2D00C0E2BE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5182C0402784EEE100A9B083 /* NewYorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYorkTableViewCell.swift; sourceTree = "<group>"; };
+		51C20020279E038D00F4F669 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		51C20022279E12F300F4F669 /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
 		51E9AC3C2782690600354EF3 /* AppNoticias.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppNoticias.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E9AC3F2782690600354EF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51E9AC412782690600354EF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +34,6 @@
 		51E9AC4B2782691000354EF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51E9AC4D2782691000354EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51E9AC552782754F00354EF3 /* NewYorkNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYorkNews.swift; sourceTree = "<group>"; };
-		51E9AC5A27827F4C00354EF3 /* file.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = file.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5119D6B52790F65E00C0E2BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				51E9AC3F2782690600354EF3 /* AppDelegate.swift */,
+				51E9AC412782690600354EF3 /* SceneDelegate.swift */,
+				51E9AC432782690600354EF3 /* MainTableViewController.swift */,
+				5119D6B82790FE2D00C0E2BE /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5119D6B62790F66E00C0E2BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				51E9AC4A2782691000354EF3 /* LaunchScreen.storyboard */,
+				51E9AC452782690600354EF3 /* Main.storyboard */,
+				5182C0402784EEE100A9B083 /* NewYorkTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5119D6B72790F67800C0E2BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				51E9AC552782754F00354EF3 /* NewYorkNews.swift */,
+				51C20020279E038D00F4F669 /* NetworkManager.swift */,
+				51C20022279E12F300F4F669 /* NewsData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		51E9AC332782690500354EF3 = {
 			isa = PBXGroup;
 			children = (
@@ -62,16 +97,11 @@
 		51E9AC3E2782690600354EF3 /* AppNoticias */ = {
 			isa = PBXGroup;
 			children = (
-				51E9AC3F2782690600354EF3 /* AppDelegate.swift */,
-				51E9AC412782690600354EF3 /* SceneDelegate.swift */,
-				51E9AC432782690600354EF3 /* MainTableViewController.swift */,
-				51E9AC452782690600354EF3 /* Main.storyboard */,
+				5119D6B72790F67800C0E2BE /* Model */,
+				5119D6B62790F66E00C0E2BE /* View */,
+				5119D6B52790F65E00C0E2BE /* Controller */,
 				51E9AC482782691000354EF3 /* Assets.xcassets */,
-				51E9AC4A2782691000354EF3 /* LaunchScreen.storyboard */,
 				51E9AC4D2782691000354EF3 /* Info.plist */,
-				51E9AC552782754F00354EF3 /* NewYorkNews.swift */,
-				51E9AC5A27827F4C00354EF3 /* file.json */,
-				5182C0402784EEE100A9B083 /* NewYorkTableViewCell.swift */,
 			);
 			path = AppNoticias;
 			sourceTree = "<group>";
@@ -135,7 +165,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				51E9AC4C2782691000354EF3 /* LaunchScreen.storyboard in Resources */,
-				51E9AC5B27827F4C00354EF3 /* file.json in Resources */,
 				51E9AC492782691000354EF3 /* Assets.xcassets in Resources */,
 				51E9AC472782690600354EF3 /* Main.storyboard in Resources */,
 			);
@@ -148,8 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C20023279E12F300F4F669 /* NewsData.swift in Sources */,
+				5119D6B92790FE2D00C0E2BE /* LoginViewController.swift in Sources */,
 				51E9AC442782690600354EF3 /* MainTableViewController.swift in Sources */,
 				51E9AC562782754F00354EF3 /* NewYorkNews.swift in Sources */,
+				51C20021279E038D00F4F669 /* NetworkManager.swift in Sources */,
 				51E9AC402782690600354EF3 /* AppDelegate.swift in Sources */,
 				5182C0412784EEE100A9B083 /* NewYorkTableViewCell.swift in Sources */,
 				51E9AC422782690600354EF3 /* SceneDelegate.swift in Sources */,
